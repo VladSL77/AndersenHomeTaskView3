@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_regular">8dp</dimen>
+    <dimen name="margin_min">2dp</dimen>
+    <dimen name="flag_width">135dp</dimen>
+    <dimen name="flag_height_1_3">30dp</dimen>
+    <dimen name="flag_height_1_2">45dp</dimen>
+    <dimen name="flag_width_1_3">45dp</dimen>
+    <dimen name="flag_height">90dp</dimen>
+    <dimen name="flag_height_1_4">22.5dp</dimen>
+    <dimen name="flag_width_2_3">90dp</dimen>
+    <dimen name="flag_height_1_6">15dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="flag_part_85dp">85dp</dimen>
+    <dimen name="margin_denmark">10dp</dimen>
+    <dimen name="flag_part_25dp">25dp</dimen>
+    <dimen name="margin_switzerland_20dp">20dp</dimen>
+    <dimen name="margin_switzerland_44dp">44dp</dimen>
+    <dimen name="flag_part_20dp">20dp</dimen>
+    <dimen name="flag_part_68dp">68dp</dimen>
+    <dimen name="flag_height_2_3">60dp</dimen>
+    <dimen name="flag_width_15dp">15dp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndersenHomeTaskView3</string>
+    <string name="input_url_image">Input URL Image</string>
+    <string name="error_load">Can`t upload Image. Please, check input URL or connection!</string>
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_main_background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutAustria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_min"
+        android:background="@color/red_austria"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutPoland"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayoutPoland"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayoutPoland">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutAustria1"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_1_3"
+            android:layout_marginTop="@dimen/flag_height_1_3"
+            android:layout_marginBottom="@dimen/flag_height_1_3"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutPoland"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/margin_min"
+        android:layout_marginBottom="2dp"
+        android:background="@color/red_poland"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutMadagascar"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayoutItaly"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayoutAustria"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutPoland1"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_1_2"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutItaly"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_min"
+        android:background="@color/red_italy"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutPoland"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayoutPoland"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayoutPoland">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutItaly1"
+            android:layout_width="@dimen/flag_width_1_3"
+            android:layout_height="@dimen/flag_height"
+            android:background="@color/green_italy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutItaly2"
+            android:layout_width="@dimen/flag_width_1_3"
+            android:layout_height="@dimen/flag_height"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/frameLayoutItaly1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutColombia"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/margin_min"
+        android:background="@color/red_colombia"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutMadagascar"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayoutMadagascar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayoutMadagascar">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutColombia1"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_1_2"
+            android:background="@color/yellow_colombia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutColombia2"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_1_4"
+            android:background="@color/blue_colombia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frameLayoutColombia1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMadagascar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_min"
+        android:layout_marginBottom="2dp"
+        android:background="@color/green_madagascar"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutSwitzerland"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayoutThailand"
+        app:layout_constraintStart_toEndOf="@id/constraintLayoutColombia"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutPoland">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutMadagascar1"
+            android:layout_width="@dimen/flag_width_1_3"
+            android:layout_height="@dimen/flag_height"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutMadagascar2"
+            android:layout_width="@dimen/flag_width_2_3"
+            android:layout_height="@dimen/flag_height_1_2"
+            android:background="@color/orange_madagascar"
+            app:layout_constraintStart_toEndOf="@id/frameLayoutMadagascar1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutThailand"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/margin_min"
+        android:background="@color/pink_red_thailand"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutMadagascar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/constraintLayoutMadagascar"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayoutMadagascar">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutThailand1"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_2_3"
+            android:layout_marginTop="@dimen/flag_height_1_6"
+            android:layout_marginBottom="@dimen/flag_height_1_6"
+            android:background="@color/ivory_thailand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutThailand2"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_1_3"
+            android:layout_marginTop="@dimen/flag_height_1_3"
+            android:layout_marginBottom="@dimen/flag_height_1_3"
+            android:background="@color/blue_magenta_thailand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutDenmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_min"
+        android:background="@color/red_denmark"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutSwitzerland"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayoutSwitzerland"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayoutSwitzerland">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutDenmark1"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height_1_6"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutDenmark2"
+            android:layout_width="@dimen/flag_width_15dp"
+            android:layout_height="@dimen/flag_height"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutSwitzerland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_min"
+        android:background="@color/red_switzerland"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/constraintLayoutDenmark"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutMadagascar">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutSwitzerland1"
+            android:layout_width="@dimen/flag_part_20dp"
+            android:layout_height="@dimen/flag_part_68dp"
+            android:layout_marginStart="@dimen/margin_switzerland_44dp"
+            android:layout_marginTop="@dimen/margin_switzerland_20dp"
+            android:layout_marginEnd="@dimen/margin_switzerland_44dp"
+            android:layout_marginBottom="@dimen/margin_switzerland_20dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutSwitzerland2"
+            android:layout_width="@dimen/flag_part_68dp"
+            android:layout_height="@dimen/flag_part_20dp"
+            android:layout_marginStart="@dimen/margin_switzerland_20dp"
+            android:layout_marginTop="@dimen/margin_switzerland_44dp"
+            android:layout_marginEnd="@dimen/margin_switzerland_20dp"
+            android:layout_marginBottom="@dimen/margin_switzerland_44dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <EditText
+        android:id="@+id/editTextImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        android:hint="@string/input_url_image"
+        android:inputType="textWebEditText"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextImage"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
