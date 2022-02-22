@@ -255,17 +255,54 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5" />
 
+    <TextView
+        android:id="@+id/textViewStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/standard_download"
+        android:textAlignment="center"
+        android:textColor="#37474F"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPicasso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <TextView
+        android:id="@+id/textViewPicasso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/picasso_download"
+        android:textColor="#37474F"
+        app:layout_constraintBottom_toTopOf="@+id/editTextImagePicasso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewStandard"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
     <EditText
-        android:id="@+id/editTextImage"
+        android:id="@+id/editTextImageStandard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_regular"
         android:hint="@string/input_url_image"
         android:inputType="textWebEditText"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#37474F"
+        app:layout_constraintEnd_toStartOf="@+id/editTextImagePicasso"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewStandard" />
+
+    <EditText
+        android:id="@+id/editTextImagePicasso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        android:hint="@string/input_url_image"
+        android:inputType="textWebEditText"
+        android:minHeight="48dp"
+        android:textColorHint="#37474F"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextImageStandard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextImageStandard"
+        app:layout_constraintTop_toTopOf="@+id/editTextImageStandard" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -275,7 +312,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextImage"
+        app:layout_constraintTop_toBottomOf="@+id/editTextImageStandard"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
